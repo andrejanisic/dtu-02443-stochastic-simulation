@@ -1,0 +1,204 @@
+=============================================
+  Part 1: Poisson arrivals, Exp service
+=============================================
+  Batch  1: blocking = 0.1275
+  Batch  2: blocking = 0.1268
+  Batch  3: blocking = 0.1200
+  Batch  4: blocking = 0.1195
+  Batch  5: blocking = 0.1323
+  Batch  6: blocking = 0.1145
+  Batch  7: blocking = 0.1206
+  Batch  8: blocking = 0.1208
+  Batch  9: blocking = 0.1183
+  Batch 10: blocking = 0.1206
+---------------------------------------------
+  Mean blocking fraction:  0.1221
+  95% CI:                  [0.1184, 0.1258]
+  Erlang B (exact):        0.1217
+=============================================
+
+=============================================
+  Part 2a: Erlang inter-arrivals
+=============================================
+
+  k=2  (CV=0.707)
+---------------------------------------------
+  Batch  1: blocking = 0.0938
+  Batch  2: blocking = 0.0948
+  Batch  3: blocking = 0.0881
+  Batch  4: blocking = 0.0926
+  Batch  5: blocking = 0.0981
+  Batch  6: blocking = 0.0856
+  Batch  7: blocking = 0.0956
+  Batch  8: blocking = 0.0932
+  Batch  9: blocking = 0.0905
+  Batch 10: blocking = 0.0817
+---------------------------------------------
+  Mean blocking fraction:  0.0914
+  95% CI:                  [0.0878, 0.0950]
+  Erlang B (Poisson ref):  0.1217
+
+  k=5  (CV=0.447)
+---------------------------------------------
+  Batch  1: blocking = 0.0762
+  Batch  2: blocking = 0.0710
+  Batch  3: blocking = 0.0663
+  Batch  4: blocking = 0.0785
+  Batch  5: blocking = 0.0725
+  Batch  6: blocking = 0.0668
+  Batch  7: blocking = 0.0772
+  Batch  8: blocking = 0.0693
+  Batch  9: blocking = 0.0730
+  Batch 10: blocking = 0.0684
+---------------------------------------------
+  Mean blocking fraction:  0.0719
+  95% CI:                  [0.0688, 0.0750]
+  Erlang B (Poisson ref):  0.1217
+
+  k=10  (CV=0.316)
+---------------------------------------------
+  Batch  1: blocking = 0.0680
+  Batch  2: blocking = 0.0670
+  Batch  3: blocking = 0.0618
+  Batch  4: blocking = 0.0684
+  Batch  5: blocking = 0.0628
+  Batch  6: blocking = 0.0608
+  Batch  7: blocking = 0.0712
+  Batch  8: blocking = 0.0634
+  Batch  9: blocking = 0.0714
+  Batch 10: blocking = 0.0655
+---------------------------------------------
+  Mean blocking fraction:  0.0660
+  95% CI:                  [0.0633, 0.0687]
+  Erlang B (Poisson ref):  0.1217
+=============================================
+
+=============================================
+  Part 2b: Hyper-exponential inter-arrivals
+  p1=0.8, λ1=0.8333, p2=0.2, λ2=5.0  CV=1.149
+=============================================
+  Batch  1: blocking = 0.1366
+  Batch  2: blocking = 0.1426
+  Batch  3: blocking = 0.1332
+  Batch  4: blocking = 0.1264
+  Batch  5: blocking = 0.1446
+  Batch  6: blocking = 0.1353
+  Batch  7: blocking = 0.1338
+  Batch  8: blocking = 0.1470
+  Batch  9: blocking = 0.1366
+  Batch 10: blocking = 0.1317
+---------------------------------------------
+  Mean blocking fraction:  0.1368
+  95% CI:                  [0.1323, 0.1413]
+  Erlang B (Poisson ref):  0.1217
+=============================================
+
+=======================================================
+  Part 3: Poisson arrivals, varying service distribution
+  Erlang B (reference): 0.1217
+=======================================================
+
+  (a) Constant service time
+  CV_svc = 0.000
+-------------------------------------------------------
+  Batch  1: blocking = 0.1285
+  Batch  2: blocking = 0.1198
+  Batch  3: blocking = 0.1208
+  Batch  4: blocking = 0.1211
+  Batch  5: blocking = 0.1223
+  Batch  6: blocking = 0.1194
+  Batch  7: blocking = 0.1228
+  Batch  8: blocking = 0.1190
+  Batch  9: blocking = 0.1278
+  Batch 10: blocking = 0.1171
+-------------------------------------------------------
+  Mean blocking fraction:  0.1219
+  95% CI:                  [0.1192, 0.1245]
+  Erlang B (reference):    0.1217
+
+  (b) Pareto service, k=2.05  CV_svc=3.123
+-------------------------------------------------------
+  Batch  1: blocking = 0.1293
+  Batch  2: blocking = 0.1212
+  Batch  3: blocking = 0.1230
+  Batch  4: blocking = 0.1252
+  Batch  5: blocking = 0.1340
+  Batch  6: blocking = 0.1119
+  Batch  7: blocking = 0.1201
+  Batch  8: blocking = 0.1122
+  Batch  9: blocking = 0.1188
+  Batch 10: blocking = 0.1153
+-------------------------------------------------------
+  Mean blocking fraction:  0.1211
+  95% CI:                  [0.1160, 0.1262]
+  Erlang B (reference):    0.1217
+
+  (b) Pareto service, k=1.05  CV_svc=inf
+-------------------------------------------------------
+  Batch  1: blocking = 0.0005
+  Batch  2: blocking = 0.0003
+  Batch  3: blocking = 0.0013
+  Batch  4: blocking = 0.0011
+  Batch  5: blocking = 0.0027
+  Batch  6: blocking = 0.0004
+  Batch  7: blocking = 0.0012
+  Batch  8: blocking = 0.0004
+  Batch  9: blocking = 0.0001
+  Batch 10: blocking = 0.0022
+-------------------------------------------------------
+  Mean blocking fraction:  0.0010
+  95% CI:                  [0.0004, 0.0016]
+  Erlang B (reference):    0.1217
+
+  (c) Erlang service, k=2  CV_svc=0.707
+-------------------------------------------------------
+  Batch  1: blocking = 0.1286
+  Batch  2: blocking = 0.1141
+  Batch  3: blocking = 0.1236
+  Batch  4: blocking = 0.1183
+  Batch  5: blocking = 0.1194
+  Batch  6: blocking = 0.1268
+  Batch  7: blocking = 0.1247
+  Batch  8: blocking = 0.1245
+  Batch  9: blocking = 0.1239
+  Batch 10: blocking = 0.1225
+-------------------------------------------------------
+  Mean blocking fraction:  0.1226
+  95% CI:                  [0.1196, 0.1257]
+  Erlang B (reference):    0.1217
+
+  (c) Erlang service, k=5  CV_svc=0.447
+-------------------------------------------------------
+  Batch  1: blocking = 0.1261
+  Batch  2: blocking = 0.1175
+  Batch  3: blocking = 0.1268
+  Batch  4: blocking = 0.1170
+  Batch  5: blocking = 0.1238
+  Batch  6: blocking = 0.1258
+  Batch  7: blocking = 0.1223
+  Batch  8: blocking = 0.1256
+  Batch  9: blocking = 0.1226
+  Batch 10: blocking = 0.1264
+-------------------------------------------------------
+  Mean blocking fraction:  0.1234
+  95% CI:                  [0.1208, 0.1260]
+  Erlang B (reference):    0.1217
+=======================================================
+
+===========================================================================
+  Part 4: Comparison of 95% Confidence Intervals
+  Erlang B (reference) = 0.1217    A = 8.0 Erlang,  m = 10
+===========================================================================
+  Experiment                   CV_arr CV_svc    Mean         95% CI       
+---------------------------------------------------------------------------
+  P1: Poisson arr, Exp svc      1.000  1.000  0.1221    [0.1184, 0.1258]  
+  P2a: Erlang arr k=2           0.707  1.000  0.0914    [0.0878, 0.0950]  
+  P2a: Erlang arr k=5           0.447  1.000  0.0719    [0.0688, 0.0750]  
+  P2a: Erlang arr k=10          0.316  1.000  0.0660    [0.0633, 0.0687]  
+  P2b: Hyper-exp arr            1.149  1.000  0.1368    [0.1323, 0.1413]  
+  P3a: Constant svc             1.000  0.000  0.1219    [0.1192, 0.1245]  
+  P3b: Pareto svc k=2.05        1.000  3.123  0.1211    [0.1160, 0.1262]  
+  P3b: Pareto svc k=1.05        1.000    inf  0.0010    [0.0004, 0.0016]  
+  P3c: Erlang svc k=2           1.000  0.707  0.1226    [0.1196, 0.1257]  
+  P3c: Erlang svc k=5           1.000  0.447  0.1234    [0.1208, 0.1260]  
+===========================================================================
